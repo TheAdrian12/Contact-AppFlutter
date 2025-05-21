@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'features/home/presentation/views/Succes_view1.dart';
 import 'features/home/presentation/views/initial_view.dart';
 
 void main() {
@@ -13,9 +14,10 @@ class MyApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       title: 'Contact-App',
-      home: Initial_View(),
+      home:Succes_view1(),
     );
   }
 
 }
+
 
