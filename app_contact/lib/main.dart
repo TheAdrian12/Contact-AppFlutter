@@ -5,6 +5,7 @@ import 'features/home/presentation/views/failute_view.dart';
 import 'features/home/presentation/views/initial_view.dart';
 import 'features/home/presentation/views/loading_view.dart';
 
+
 void main() {
   runApp(MyApp());
 }
@@ -16,11 +17,17 @@ class MyApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       title: 'Contact-App',
+
       home: failure_view(),
+
+=======
+      home:loading_view(),
 
     );
   }
 
 }
+
+
 
 
