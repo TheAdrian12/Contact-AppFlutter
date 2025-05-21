@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'features/home/presentation/views/initial_view.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -11,18 +13,9 @@ class MyApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       title: 'Contact-App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Contacts',
-          style: TextStyle(
-            fontSize: 25.00,
-            fontWeight: FontWeight.bold
-          ),),
-          centerTitle: true,
-          backgroundColor: Colors.white,
-        ),
-      ),
+      home: Initial_View(),
     );
   }
 
 }
+
