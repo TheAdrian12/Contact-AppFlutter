@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widget/interaction.dart';
 
 class Initial_View extends StatelessWidget {
   const Initial_View({
@@ -31,81 +32,46 @@ class Initial_View extends StatelessWidget {
             ),),),
             Row(
             children: [
-              Expanded( // Para que el Stack tome espacio dentro del Row
-                child: Stack(
-                  children: [
-                    Align(
-                      alignment: Alignment.bottomRight,
-                      child: Card(
-                        elevation: 15,
-                        margin: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Container(
-                          height: 240,
-                          width: 220,
-                          padding: EdgeInsets.all(8),
-                          child: Column(
-                            children: [
-                              SizedBox(height: 20),
-                              CircleAvatar(
-                                radius: 60,
-                                backgroundImage: NetworkImage(
-                                  'https://st.depositphotos.com/1224365/2485/i/450/depositphotos_24858345-stock-photo-close-up-of-a-normal.jpg',
-                                ),
-                                backgroundColor: Colors.blue,
-                              ),
-                              SizedBox(height: 35),
-                              Text(
-                                'Patricia Carolina',
-                                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                     Align(
-                       alignment: Alignment.bottomLeft,
-                      child: Card(
-                        elevation: 15,
-                        margin: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Container(
-                          height: 240,
-                          width: 220,
-                          padding: EdgeInsets.all(8),
-                          child: Column(
-                            children: [
-                              SizedBox(height: 20),
-                              CircleAvatar(
-                                radius: 60,
-                                backgroundImage: NetworkImage(
-                                  'https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/768x999/768x999-ry-cavillel-nuevo-superman-el-hombre-de-acero-un-hombre-normal-9628861-1-esl-es-un-hombre-normal-jpg.jpg?resize=980:*',
-                                ),
-                                backgroundColor: Colors.blue,
-                              ),
-                              SizedBox(height: 35),
-                              Text(
-                                'Henry armstrong',
-                                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+              Expanded(
+                child: interaction(),
               ),
+               Align(
+                       alignment: Alignment.topRight,
+                      child: Card(
+                        elevation: 15,
+                        margin: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Container(
+                          height: 240,
+                          width: 220,
+                          padding: EdgeInsets.all(8),
+                          child: Column(
+                            children: [
+                              SizedBox(height: 20),
+                              CircleAvatar(
+                                radius: 60,
+                                backgroundImage: NetworkImage(
+                                  'https://st.depositphotos.com/1743476/2514/i/450/depositphotos_25144755-stock-photo-presenting-your-text.jpg',
+                                ),
+                                backgroundColor: Colors.blue,
+                              ),
+                              SizedBox(height: 35),
+                              Text(
+                                'Jake anderson',
+                                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
             ],
           ),
             Row(
             children: [
-              Expanded( // Para que el Stack tome espacio dentro del Row
+              Expanded( 
                 child: Stack(
                   children: [
                     Align(
